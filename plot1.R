@@ -11,7 +11,7 @@ df2 <- filter(df, between(Date, as.Date("2007-02-01"), as.Date("2007-02-02")))
 hist(as.numeric(df2$Global_active_power), xlab ="Global Active Power (kilowatts)", main ="Global Active POwer", col = "red")
 
 ## plot1.png
-png(file="plot1.png")
+png(file="plot1.png", width=480, height=480, units="px")
 hist(as.numeric(df2$Global_active_power), xlab ="Global Active Power (kilowatts)", main ="Global Active Power", col = "red")
 dev.off()
 
