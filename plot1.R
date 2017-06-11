@@ -1,7 +1,7 @@
 ## read the data and convert "Date" column to a Date class
 df <- read.table("household_power_consumption.txt", sep=";", stringsAsFactors=FALSE, head=TRUE)
 library(lubridate)
-df$Date <-as.Date(df$Date, "%d%m%Y")
+df$Date <-as.Date(df$Date, "%d/%m/%Y")
 library(dplyr)
 
 ## subset the data frame to only include the two days
